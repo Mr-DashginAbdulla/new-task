@@ -1,8 +1,190 @@
-@import 'main.scss';
-
+@font-face {
+  font-family: "Balqis";
+  font-weight: 700;
+  src: url("../assets/fonts/Balqis.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url(../assets/fonts/RobotoCondensed-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../assets/fonts/RobotoCondensed-Light.ttf) format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+
+.section {
+  position: relative;
+}
+
+header {
+  margin-bottom: 7%;
+}
+header img {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 62%;
+  position: absolute;
+  margin: 4% 19%;
+  top: 0px;
+}
+header .menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  color: black;
+  font-size: 1.2vw;
+  border-bottom: 3px solid transparent;
+  transition: 0.5s;
+}
+header a:hover {
+  border-color: #E2AB3F;
+  padding-bottom: 5px;
+  color: rgb(51, 51, 51);
+}
+header .Cappadocia {
+  position: absolute;
+  width: 56%;
+  font-size: 6.5vw;
+  margin: 15% 22%;
+  z-index: 1;
+  top: 0;
+  font-family: "Balqis";
+}
+
+main {
+  margin-bottom: 7%;
+}
+main .fairy-tale {
+  margin-left: 19%;
+  font-size: 4vw;
+  font-family: "Balqis";
+  font-weight: 400;
+  color: #E2AB3F;
+}
+main .first-part {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4%;
+  width: 81%;
+  margin-right: 19%;
+}
+main .first-part .photo img {
+  width: 50vw;
+}
+main .text-part {
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 5%;
+}
+main .text-part p {
+  margin-bottom: 7%;
+  font-size: 1vw;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+}
+main .second-part {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7%;
+  width: 81%;
+  margin-left: 19%;
+}
+main .second-part .text-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40vw;
+  margin-right: 17%;
+}
+main .our-trip {
+  font-family: "Balqis";
+  font-size: 4vw;
+  color: #E2AB3F;
+}
+main .second-part .photo {
+  width: 50vw;
+  height: auto;
+}
+main .second-part .date {
+  margin-top: 10%;
+  font-family: "Roboto Condensed";
+  font-size: 1vw;
+}
+main .second-part .date-text {
+  font-size: 1vw;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+}
+main .second-part .button {
+  margin-top: 10%;
+  border: 1px solid #E2AB3F;
+  text-align: center;
+  width: 13vw;
+  padding: 3% 3%;
+  font-size: 1.2vw;
+}
+main .second-part .button a {
+  color: black;
+}
+main .third-part {
+  width: 62%;
+  margin: 7% 19%;
+}
+main .third-part h1 {
+  font-family: "Balqis";
+  font-size: 4vw;
+  color: #E2AB3F;
+  margin-bottom: 5%;
+}
+main .photo-text-card {
+  display: flex;
+  justify-content: space-between;
+}
+main .text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+main .cards {
+  width: 60%;
+  display: grid;
+  flex-wrap: wrap;
+}
+
+footer img {
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }/*# sourceMappingURL=main.css.map */
