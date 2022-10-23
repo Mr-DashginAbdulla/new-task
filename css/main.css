@@ -73,41 +73,44 @@ main .fairy-tale {
   font-family: "Balqis";
   font-weight: 400;
   color: #E2AB3F;
+  margin-bottom: 4%;
 }
 main .first-part {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 4%;
-  width: 81%;
-  margin-right: 19%;
+  justify-content: space-between;
+  margin-right: 16.5%;
+  gap: 4%;
+}
+main .first-part .photo {
+  width: 62%;
 }
 main .first-part .photo img {
-  width: 50vw;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .text-part {
-  margin-top: 5%;
-  width: 40%;
-  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 38%;
 }
 main .text-part p {
-  margin-bottom: 7%;
   font-size: 1vw;
   font-family: "Roboto Condensed";
   font-weight: 300;
 }
 main .second-part {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 7%;
-  width: 81%;
   margin-left: 19%;
 }
 main .second-part .text-side {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 40vw;
-  margin-right: 17%;
+  width: 22%;
 }
 main .our-trip {
   font-family: "Balqis";
@@ -115,8 +118,10 @@ main .our-trip {
   color: #E2AB3F;
 }
 main .second-part .photo {
-  width: 50vw;
-  height: auto;
+  width: 62%;
+}
+main .second-part .photo img {
+  width: 100%;
 }
 main .second-part .date {
   margin-top: 10%;
