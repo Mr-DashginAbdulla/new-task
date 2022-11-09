@@ -24,11 +24,11 @@ Print all numbers from 1 to 1000 that are divisible by A.
 /*
 3. The user enters 1 number (A). Print the largest divisor (other than A itself) of the number A.
 */
-// let index, num = parseInt(prompt('Please enter the value for num'));
+// let  num = parseInt(prompt('Please enter the value for num'));
 // for (let index = 1; index < num; index++) {
 //     if((num%index)==0){
-//         console.log(index)
-//     }
+    //     }
+    //         console.log(index)
 // }
 
 

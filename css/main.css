@@ -83,11 +83,23 @@ main .first-part {
 }
 main .first-part .photo {
   width: 62%;
+  position: relative;
 }
-main .first-part .photo img {
+main .first-part .photo #main-photo {
+  position: relative;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main .first-part .photo #left-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+main .first-part .photo #right-btn {
+  position: absolute;
+  top: 50%;
+  left: 90%;
 }
 main .text-part {
   display: flex;
@@ -209,6 +221,9 @@ footer img {
   main .first-part .text-part {
     width: 100%;
     text-align: justify;
+  }
+  main .first-part .text-part p {
+    font-size: 18px;
   }
   main .second-part {
     width: 100%;
