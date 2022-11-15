@@ -85,8 +85,7 @@ main .first-part .photo {
   width: 62%;
   position: relative;
 }
-main .first-part .photo #main-photo {
-  position: relative;
+main .first-part .photo img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -94,12 +93,16 @@ main .first-part .photo #main-photo {
 main .first-part .photo #left-btn {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 10px;
+  width: 20px;
+  cursor: pointer;
 }
 main .first-part .photo #right-btn {
   position: absolute;
   top: 50%;
-  left: 90%;
+  right: 10px;
+  cursor: pointer;
+  width: 20px;
 }
 main .text-part {
   display: flex;
@@ -131,9 +134,26 @@ main .our-trip {
 }
 main .second-part .photo {
   width: 62%;
+  position: relative;
 }
 main .second-part .photo img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .second-part .photo #left-btn2 {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+main .second-part .photo #right-btn2 {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  width: 20px;
 }
 main .second-part .date {
   margin-top: 10%;
@@ -149,7 +169,6 @@ main .second-part .button {
   margin-top: 10%;
   border: 1px solid #E2AB3F;
   text-align: center;
-  width: 13vw;
   padding: 3% 3%;
   font-size: 1.2vw;
 }
@@ -186,12 +205,12 @@ footer img {
   width: 100%;
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 426px) {
   .mobile-header, .burger-menu {
     display: none;
   }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .header-bg, nav a {
     display: none;
   }
@@ -207,7 +226,10 @@ footer img {
   }
   main {
     width: 100%;
-    max-width: 414px;
+    max-width: 425px;
+  }
+  main .fairy-tale {
+    font-size: 40px;
   }
   main .first-part {
     width: 100%;
@@ -223,7 +245,8 @@ footer img {
     text-align: justify;
   }
   main .first-part .text-part p {
-    font-size: 18px;
+    margin: 10px 10px;
+    font-size: 10px;
   }
   main .second-part {
     width: 100%;
@@ -253,9 +276,10 @@ footer img {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgb(52, 51, 51);
 }/*# sourceMappingURL=main.css.map */

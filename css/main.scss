@@ -77,21 +77,25 @@ main{
         width: 62%;
         position: relative;
 
-        #main-photo{
-            position: relative;
+        img{
             width: 100%;
             object-fit: cover;
         }
         #left-btn{
             position: absolute;
             top: 50%;
-            left: 0;
+            left: 10px;
+            width: 20px;
+            cursor: pointer;
         }
         #right-btn{
             position: absolute;
             top: 50%;
-            left: 90%;
+            right: 10px;
+            cursor: pointer;
+            width: 20px;
         }
+       
     }
     .text-part{
         display: flex;
@@ -124,8 +128,25 @@ main{
     }
     .second-part .photo{
         width: 62%;
+        position: relative;
+
         img{
             width: 100%;
+            object-fit: cover;
+        }
+        #left-btn2{
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            width: 20px;
+            cursor: pointer;
+        }
+        #right-btn2{
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            cursor: pointer;
+            width: 20px;
         }
     }
     .second-part .date{
@@ -142,7 +163,6 @@ main{
         margin-top: 10%;
         border: 1px solid #E2AB3F;
         text-align: center;
-        width: 13vw;
         padding: 3% 3%;
         font-size: 1.2vw;
     }
@@ -185,13 +205,13 @@ footer{
     }
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 426px) {
     .mobile-header, .burger-menu{
         display: none;
     }
     
 }
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 425px){
     .header-bg, nav a{
         display: none;
     }
@@ -208,8 +228,11 @@ footer{
     
     main{
         width: 100%;
-        max-width: 414px;
+        max-width: 425px;
 
+        .fairy-tale{
+            font-size: 40px;;
+        }
         .first-part{
             width: 100%;
             display: flex;
@@ -223,7 +246,8 @@ footer{
                 width: 100%;
                 text-align: justify;
                 p{
-                    font-size: 18px;
+                    margin: 10px 10px;
+                    font-size: 10px;
                 }
             }
         }
@@ -248,10 +272,6 @@ footer{
 }
 
 
-
-
-
-
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -265,9 +285,10 @@ footer{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
+    border-radius: 8px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgb(52, 51, 51);
   }
